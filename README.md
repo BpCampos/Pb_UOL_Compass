@@ -40,6 +40,8 @@ Por parte do **Back End** e **banco de dados**, através do bootcamp e de cursos
 - MongoDB
 - Sequelize ORM
 
+---
+
 ## Sprints
 
 1. [Sprint 1](Sprint%201/README.md)
