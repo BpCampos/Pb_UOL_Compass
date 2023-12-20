@@ -21,7 +21,9 @@ Para cada Sprint, crie um arquivo README.md na respectiva pasta. Este arquivo se
 
 **Instituição de ensino:** SENAC São Paulo
 
-**Curso:** Análise e Desenvolvimento de Sistemas - 1o Semestre
+**Curso:** Análise e Desenvolvimento de Sistemas
+
+**Semestre:** 1o
 
 **Sobre mim:** Participei de um bootcamp de Desenvolvimento Full Stack, por meio do qual adquiri habilidades com tecnologias **Front End** sendo elas:
 
@@ -39,6 +41,8 @@ Por parte do **Back End** e **banco de dados**, através do bootcamp e de cursos
 - MySQL
 - MongoDB
 - Sequelize ORM
+
+Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunocampos.vercel.app/) para poder me apresentar e mostrar alguns dos projetos pessoais que eu criei
 
 ---
 
