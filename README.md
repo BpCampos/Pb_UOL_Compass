@@ -6,9 +6,6 @@ Neste arquivo você fará a sua apresentação, assim como a organização geral
 
 - Uma ou mais seções para descrever o que estiver aprendendo (resumo), de maneira estruturada. Na medida que você avança no programa de bolsas, deverá alimentar para criar um portfólio de seus estudos.
 
-- De forma opcional, sugerimos que você adicione uma foto ao seu perfil do GitHub, pois utilizamos tal informação para facilitar a sua identificação ao longo do processo. Lembre-se que a informação é pública, tal qual você pode testar no exemplo do repositório da [
-  The Apache Software Foundation](https://github.com/apache.png?size=250).
-
 Para cada Sprint, crie um arquivo README.md na respectiva pasta. Este arquivo será o relato da sua entrega. Considere organizar neste arquivo a apresentação dos códigos desenvolvidos, imagens que evidenciam a execução (se necessário) e as imagens dos certificados dos cursos solicitados.
 
 ---
@@ -43,6 +40,20 @@ Por parte do **Back End** e **banco de dados**, através do bootcamp e de cursos
 - Sequelize ORM
 
 Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunocampos.vercel.app/) para poder me apresentar e mostrar alguns dos projetos pessoais que eu criei
+
+---
+
+## Resumo de estudos
+
+### **Sprint 1**
+
+### Linux
+
+-
+
+### Git
+
+-
 
 ---
 
