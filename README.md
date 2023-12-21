@@ -43,20 +43,6 @@ Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunoca
 
 ---
 
-## Resumo de estudos
-
-### **Sprint 1**
-
-### Linux
-
--
-
-### Git
-
--
-
----
-
 ## Sprints
 
 1. [Sprint 1](Sprint%201/README.md)
