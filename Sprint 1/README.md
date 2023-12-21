@@ -14,13 +14,13 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 -
 
----
+### [anotações completas](./resumos_estudo/linux.md)
 
 ### Git
 
 -
 
----
+### [anotações completas](./resumos_estudo/git.md)
 
 # Exercícios
 
