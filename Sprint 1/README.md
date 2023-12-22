@@ -32,7 +32,17 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 ### Git
 
--
+- ferramenta de controle de versão mais utilizada no mercado
+- Baseado em repositórios e contem todas as versões do código
+- Comando para adicionar arquivos à area de stagging do git
+- Comando **commit** para salvar uma cópia dos arquivos
+- Comando para enviar arquivos e diretórios para o Github
+- Github é o repositório remoto onde as arquivos ficam salvos no servidor
+- Comandos para criar/alterar/deletar branchs
+- Pull requests e merges de branches
+- Comandos para criação de tags e stashs
+- **Git log** para mostrar detalhes de commits passados
+- Conceitos de Markdown para adicionar estilos aos textos
 
 ### [anotações completas](./resumos_estudo/git.md)
 
