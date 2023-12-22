@@ -12,7 +12,21 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 
 ### Linux
 
--
+- A distribuição mais popular do Linux é grátis
+- Utilizado na maioria dos servidores web
+- Requisitos para muitas vagas
+- Comunidade ativa
+- Segurança, os servidores mais seguros são Linux
+- Suporte nativo para muitas linguagens
+
+---
+
+- Comandos para navegar/alterar/deletar/criar entre arquivos
+- Comandos para gerenciar pacotes dentro do Linux com update e upgrade
+- Visualização de arquivos seja como um todo ou em partes
+- Editores de texto inerentes ao Linux como **nano**
+- Gerenciamento de permissões de acesso á arquivos e diretórios com **chmod**
+- Gerenciamento báscico de redes com **ping/ipconfig**
 
 ### [anotações completas](./resumos_estudo/linux.md)
 
