@@ -39,7 +39,7 @@ Por parte do **Back End** e **banco de dados**, através do bootcamp e de cursos
 - MongoDB
 - Sequelize ORM
 
-Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunocampos.vercel.app/) para poder me apresentar e mostrar alguns dos projetos pessoais que eu criei
+Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunocampos.vercel.app/) para poder me apresentar e mostrar alguns dos projetos pessoais que eu criei.
 
 ---
 
