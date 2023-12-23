@@ -43,7 +43,7 @@ Utilize o arquivo README.md da Sprint para organizar todas as suas entregas. Fa�
 - Comandos para criação de tags e stashs
 - **Git log** para mostrar detalhes de commits passados
 - Conceitos de Markdown para adicionar estilos aos textos
-- Criação de issues, insights sobre o repositório no Github
+- Criação de issues, insights sobre o repositório no Github e actions
 
 ### [anotações completas](./resumos_estudo/git.md)
 
