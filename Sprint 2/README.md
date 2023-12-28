@@ -1,3 +1,23 @@
+# Resumo de estudo
+
+### **Big Data**
+
+- Coleção de conjuntos de dados, grandes e complexos, que não podem ser processados por banco de dados ou aplicações de processamento tradicionais
+- Formada por 4 V's
+  - Velocidade
+  - Volume
+  - Variedade
+  - Veracidade
+- Armazenamento de dados em **Data Lakes**, **Data Warehouse**, **Data Stores**
+- Processos **ETL** para Extração, Transformação e Carregamento de dados
+- Processamento e Armazenamento paralelo com Apache Hadoop
+- Cluster de computadores locais ou em núvem
+- MLOps como conjunto de práticas para colaboração e comunicação entre Cientistas de Dados e profissionais de operações
+- Definição de DataOps
+- Dados como serviço (DaaS)
+
+### [Anotações completas](./resumos_estudo/Big_Data.md)
+
 # Exercícios
 
 1. ...
