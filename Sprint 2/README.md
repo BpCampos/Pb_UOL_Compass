@@ -18,6 +18,25 @@
 
 ### [Anotações completas](./resumos_estudo/Big_Data.md)
 
+### SQL
+
+- Comandos básicos como SELECT, DISTINCT, WHERE, ORDER BY
+- Operadores aritméticos para realizar contas e junções como + - \* / ^ %
+- Operadores de comparação = = > < ≥ ≤ <>
+- Operadores lógicos **AND NOT BETWEEN IN**
+- Funções de agregações: **COUNT SUM MIN MAX AVG**
+- **GROUP BY** para as funções de agregação
+- **JOIN LEFT JOIN RIGHT JOIN INNER JOIN**
+- Subqueries para usar em conjunto com **SELECT WITH**]
+- Tratamento de dados com ::date ::numeric e replace
+- Maninupalção de tabelas
+  - criação de tabela com create table
+  - criação/alteração/deleção de linhas com **insert** **into** **update** e **delete**
+  - criação/alteração/deleção de colunas com **alter drop update**
+- Criação de funções
+
+### [Anotações completas](./resumos_estudo/SQL.md)
+
 # Exercícios
 
 1. ...
@@ -36,3 +55,6 @@ Ao executar o código do exercício ... observei que ... conforme podemos ver na
 
 - Certificado do Curso ABC
   ![Curso ABC](certificados/Certificado_BigData.PNG)
+
+- Certificado do Curso ABC
+  ![Curso ABC](certificados/Certificado_SQL.jpg)
