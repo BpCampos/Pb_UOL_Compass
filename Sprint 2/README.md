@@ -40,51 +40,51 @@
 # Exercícios
 
 1. ...
-   [Resposta Ex1.](exercicios/ex1.txt)
+   [Resposta Ex1.](exercicios/Ex1.txt)
 
 2. ...
-   [Resposta Ex2.](exercicios/ex2.txt)
+   [Resposta Ex2.](exercicios/Ex2.txt)
 
 3. ...
-   [Resposta Ex3.](exercicios/ex3.txt)
+   [Resposta Ex3.](exercicios/Ex3.txt)
 
 4. ...
-   [Resposta Ex4.](exercicios/ex4.txt)
+   [Resposta Ex4.](exercicios/Ex4.txt)
 
 5. ...
-   [Resposta Ex5.](exercicios/ex5.txt)
+   [Resposta Ex5.](exercicios/Ex5.txt)
 
 6. ...
-   [Resposta Ex6.](exercicios/ex6.txt)
+   [Resposta Ex6.](exercicios/Ex6.txt)
 
 7. ...
-   [Resposta Ex7.](exercicios/ex7.txt)
+   [Resposta Ex7.](exercicios/Ex7.txt)
 
 8. ...
-   [Resposta Ex8.](exercicios/ex8.txt)
+   [Resposta Ex8.](exercicios/Ex8.txt)
 
 9. ...
-   [Resposta Ex9.](exercicios/ex9.txt)
+   [Resposta Ex9.](exercicios/Ex9.txt)
 
 10. ...
-    [Resposta Ex10.](exercicios/ex10.txt)
+    [Resposta Ex10.](exercicios/Ex10.txt)
 
 11. ...
-    [Resposta Ex11.](exercicios/ex11.txt)
+    [Resposta Ex11.](exercicios/Ex11.txt)
 
 12. ...
-    [Resposta Ex12.](exercicios/ex12.txt)
+    [Resposta Ex12.](exercicios/Ex12.txt)
 
 13. ...
-    [Resposta Ex13.](exercicios/ex13.txt)
+    [Resposta Ex13.](exercicios/Ex13.txt)
 
 14. ...
-    [Resposta Ex14.](exercicios/ex14.txt)
+    [Resposta Ex14.](exercicios/Ex14.txt)
 
 15. ...
-    [Resposta Ex15.](exercicios/ex15.txt)
+    [Resposta Ex15.](exercicios/Ex15.txt)
 16. ...
-    [Resposta Ex16.](exercicios/ex16.txt)
+    [Resposta Ex16.](exercicios/Ex16.txt)
 
 # Tarefa 1
 
