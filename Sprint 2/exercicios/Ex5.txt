@@ -1,0 +1,9 @@
+SELECT distinct aut.nome
+from autor as aut left join livro as liv
+	on aut.codautor = liv.autor
+left join editora as edit
+	on liv.editora = edit.codeditora
+left join endereco as ende
+	on edit.endereco = ende.codendereco
+WHERE ende.estado not in ('RIO GRANDE DO SUL', 'SANTA CATARINA', 'PARANÁ')
+order by aut.nome

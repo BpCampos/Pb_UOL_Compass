@@ -1,0 +1,7 @@
+SELECT count(*) as quantidade, edit.nome, endereco.estado, endereco.cidade 
+from livro as liv left join editora as edit
+	on liv.editora = edit.codeditora
+left join endereco
+	on edit.endereco = endereco.codendereco
+group by edit.nome
+order by quantidade desc

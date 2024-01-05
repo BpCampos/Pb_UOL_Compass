@@ -1,0 +1,6 @@
+select t.nmvdd as vendedor, sum((t2.qtd * t2.vrunt)) as valor_total_vendas,  ROUND(((sum(t2.qtd * t2.vrunt) * t.perccomissao) / 100), 2)  as comissao
+from tbvendedor t left join tbvendas t2
+	on t.cdvdd = t2.cdvdd
+where t2.status = 'Concluído'
+group by t2.cdvdd 
+order by comissao desc

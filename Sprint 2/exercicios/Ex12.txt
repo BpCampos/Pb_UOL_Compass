@@ -1,0 +1,10 @@
+select t.cddep, t.nmdep, t.dtnasc, sum(t3.qtd * t3.vrunt) as valor_total_vendas
+from tbdependente t left join tbvendedor t2 
+	on t.cdvdd = t2.cdvdd
+left join tbvendas t3
+	on t2.cdvdd = t3.cdvdd
+where t3.status = 'Concluído'
+group by t2.cdvdd
+having valor_total_vendas <> 0
+order by valor_total_vendas
+limit 1

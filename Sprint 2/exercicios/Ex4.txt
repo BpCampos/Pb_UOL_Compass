@@ -1,0 +1,5 @@
+SELECT aut.nome, aut.codautor, aut.nascimento, COUNT(liv.cod) as quantidade 
+from autor as aut left join livro as liv
+	on liv.autor = aut.codautor
+group by aut.nome
+order by aut.nome

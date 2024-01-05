@@ -1,0 +1,7 @@
+select vendedor.cdvdd, vendedor.nmvdd
+from tbvendedor vendedor left join tbvendas vendas
+	on vendedor.cdvdd = vendas.cdvdd
+group by vendedor.cdvdd
+having vendas.status = 'Concluído'
+order by count(vendas.cdven) desc
+limit 1

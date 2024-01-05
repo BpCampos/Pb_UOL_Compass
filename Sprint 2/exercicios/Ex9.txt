@@ -1,0 +1,5 @@
+select cdpro, nmpro from tbvendas t
+where dtven BETWEEN  '2014-02-03' and '2018-02-02' and status = 'Concluído'
+group by nmpro
+order by count(nmpro) desc
+limit 1
