@@ -45,6 +45,30 @@
 2. ...
    [Resposta Ex2.](exercicios/ex2.txt)
 
+# Tarefa 1
+
+1. [Query dos 10 livros mais caros](exercicios/arquivo1.csv)
+
+```
+select l.cod, l.titulo, l.autor, a.nome, l.valor, l.editora, e.nome
+from livro l left join autor a
+	on l.autor = a.codautor
+left join editora e
+	on l.editora = e.codeditora
+order by l.valor desc
+limit 10
+```
+
+2. [Query das 5 editoras com maior quantidade de livros na biblioteca ](exercicios/arquivo2.csv)
+
+```
+select e.codeditora, e.nome, count(l.cod) as QuantidadeLivros
+from livro l left join editora e
+	on e.codeditora = l.editora
+group by e.nome
+order by QuantidadeLivros DESC
+```
+
 # Evidências
 
 Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
@@ -53,8 +77,8 @@ Ao executar o código do exercício ... observei que ... conforme podemos ver na
 
 # Certificados
 
-- Certificado do Curso ABC
-  ![Curso ABC](certificados/Certificado_BigData.PNG)
+- Certificado do Curso Big Data
+  ![Curso Big Data](certificados/Certificado_BigData.PNG)
 
-- Certificado do Curso ABC
-  ![Curso ABC](certificados/Certificado_SQL.jpg)
+- Certificado do Curso SQL
+  ![Curso SQL](certificados/Certificado_SQL.jpg)
