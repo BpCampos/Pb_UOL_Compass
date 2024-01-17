@@ -75,9 +75,35 @@
 25. ...
     [Resposta Ex25.](exercicios/ex25.py)
 
-# Desafio
+# Desafio ETL
 
--
+- [Arquivo csv](desafio/actors.csv)
+
+### Código das etapas
+
+- [Código](./desafio/etl.ipynb)
+
+### Etapa 1
+
+- [Resultado](./desafio/etapa-1.txt)
+
+### Etapa 2
+
+- [Resultado](./desafio/etapa-2.txt)
+
+### Etapa 3
+
+- [Resultado](./desafio/etapa-3.txt)
+
+### Etapa 4
+
+- [Resultado](./desafio/etapa-4.txt)
+
+### Etapa 5
+
+- [Resultado](./desafio/etapa-5.txt)
+
+---
 
 # Certificados
 
