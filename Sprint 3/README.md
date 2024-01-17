@@ -81,27 +81,32 @@
 
 ### Código das etapas
 
-- [Código](./desafio/etl.ipynb)
+- [Script no Jupyter](./desafio/etl.ipynb)
 
 ### Etapa 1
 
 - [Resultado](./desafio/etapa-1.txt)
+- [Código](./desafio/etapa-1.py)
 
 ### Etapa 2
 
 - [Resultado](./desafio/etapa-2.txt)
+- [Código](./desafio/etapa-2.py)
 
 ### Etapa 3
 
 - [Resultado](./desafio/etapa-3.txt)
+- [Código](./desafio/etapa-3.py)
 
 ### Etapa 4
 
 - [Resultado](./desafio/etapa-4.txt)
+- [Código](./desafio/etapa-4.py)
 
 ### Etapa 5
 
 - [Resultado](./desafio/etapa-5.txt)
+- [Código](./desafio/etapa-5.py)
 
 ---
 
