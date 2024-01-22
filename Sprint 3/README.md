@@ -1,3 +1,27 @@
+# Resumo de estudo
+
+### Python
+
+- Is a widely-used, interpreted, object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming.
+- types of variables in python
+  - `boolean` → **True/False**
+  - `float` → **1.2**
+  - `integer` → **12**
+  - `string` → **‘something’** or **“something”**
+- Conditionals with if and else
+- The name of the variable must not be any of Python's reserved words
+- Swap variables: variable_1, variable_2 = variable_2, variable_1
+- Interaction with user through **input()**
+- Loops with **for** and **while**
+- Logical operators with **and / or**
+- **Lists, Dictionaries, tuples, sets**
+- List comprehension
+- Functions with **def function()**
+- Open/read/write files
+- OOP paradigm
+
+### [Anotações completas](./resumos_estudo/python.md)
+
 # Exercícios
 
 1. ...
