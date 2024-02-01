@@ -50,8 +50,6 @@ WORKDIR /app
 COPY . .
 
 CMD ["python", "hash.py"]
-
-comando de inicialização:
 ```
 
 ### Comando

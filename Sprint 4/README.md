@@ -17,6 +17,8 @@
 
 # Tarefa
 
+- [Respostas do desafio](./desafio/respostas_tarefa_docker.md)
+
 # Certificados
 
 - Certificado do curso **Docker**
