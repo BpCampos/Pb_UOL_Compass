@@ -1,18 +1,24 @@
 # Exercícios
 
-1. ...
-   [Resposta Ex1.](exercicios/ex1.txt)
-
-2. ...
-   [Resposta Ex2.](exercicios/ex2.txt)
-
-# Evidências
-
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
-
-![Evidencia 1](evidencias/sample.webp)
+1. Ex1
+   [Resposta](exercicios/ex1.py)
+2. Ex2
+   [Resposta](exercicios/ex2.py)
+3. Ex3
+   [Resposta](exercicios/ex3.py)
+4. Ex4
+   [Resposta](exercicios/ex4.py)
+5. Ex5
+   [Resposta](exercicios/ex5.py)
+6. Ex6
+   [Resposta](exercicios/ex6.py)
+7. Ex7
+   [Resposta](exercicios/ex7.py)
 
 # Certificados
 
-- Certificado do Curso ABC
-  ![Curso ABC](certificados/sample.png)
+- Certificado do curso **Docker**
+  ![Curso Docker](certificados/Docker.jpg)
+
+- Certificado do curso **Estatística Descritiva**
+  ![Curso Estatística](certificados/Estatistica.jpg)
