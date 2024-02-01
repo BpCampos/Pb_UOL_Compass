@@ -15,6 +15,8 @@
 7. Ex7
    [Resposta](exercicios/ex7.py)
 
+# Tarefa
+
 # Certificados
 
 - Certificado do curso **Docker**
