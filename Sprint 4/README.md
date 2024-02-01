@@ -1,3 +1,25 @@
+# Resumo de estudo
+
+### Docker
+
+- Docker é um software que reduz a complexidade de setup de aplicações
+- `Containers` → São os locais onde rodamos nossas aplicações
+- Imagem é o **‘projeto’** que será executado pelo container, todas as instruções estarão declaradas nela
+- Executar containers com interação com `-it`
+- Expor portas com `-p`
+- Reiniciando containers com `docker start <id> ou <nome_do_container>`
+- Removendo Containers com `docker rm <id>/<nome_do_container>`
+- Podemos pegar imanges do **Docker Hub**
+- **Dockerfile** para criar imagens
+- Executando a nossa imagem com `docker build <diretório da imagem>`
+- Criação de volumes para persistir dados
+- Network para conectar containers
+- Arquivo `YAML`
+- Docker Compose para rodar múltiplos containers
+- Docker Swarm e Kubernetes para orquestração de containers
+
+### [Anotações completas](./resumo_estudo/docker.md)
+
 # Exercícios
 
 1. Ex1
