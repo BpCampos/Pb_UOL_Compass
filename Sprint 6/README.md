@@ -1,14 +1,46 @@
-# Exercícios
-
-1. ...
-   [Resposta Ex1.](exercicios/ex1.txt)
-
-2. ...
-   [Resposta Ex2.](exercicios/ex2.txt)
-
 # Evidências
 
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
+## Lab 1 - S3
+
+### Arquivos do S3
+
+![](evidencias/AWS_S3.png)
+
+### Site estático
+
+![](./evidencias/Static_website.PNG)
+
+## Lab 2 - Athena
+
+### Print da tela do Athena
+
+![](./evidencias/AWS_Athena.png)
+
+### Query Athena
+
+![](./evidencias/Athena.PNG)
+
+### Resultado query
+
+![](./evidencias/Athena_resultado.PNG)
+
+### CSV da query
+
+[CSV](<./evidencias/80aef88b-0196-4a77-8b20-fcc09e9edcf6%20(1).csv>)
+
+## Lab 3 - lambda
+
+### Print da tela Lambda
+
+![](./evidencias/AWS_lambda.png)
+
+### Resultado da Lambda function
+
+![](./evidencias/lambda_resultado.PNG)
+
+### Camadas da Lambda
+
+![](./evidencias/Camadas.PNG)
 
 # Certificados
 
