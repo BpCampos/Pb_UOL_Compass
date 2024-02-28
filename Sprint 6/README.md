@@ -18,7 +18,7 @@
 - `Esquema de dados` → é o conjunto de metadados usado pelo banco de dados para organizar objetos de dados e impor restrições de integridade.
 - Os `relatórios analíticos` são apresentados em vários formatos e tamanhos diferentes. A origem dos dados raramente afeta os relatórios resultantes. Os relatórios são organizados para atender às necessidades dos consumidores dos relatórios.
 
-### ![Anotações completas](./resumo_estudo/resumo.md)
+### [Anotações completas](./resumo_estudo/resumo.md)
 
 # Evidências
 
