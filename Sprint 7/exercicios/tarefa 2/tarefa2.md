@@ -6,10 +6,10 @@
 - for palavra, quantidade in contador.items():
   - print(f"{palavra} -> {quantidade}")
 
-## Print Docker
-
-![](./docker.png)
-
 ## Print comandos Spark
 
 ![](./spark.png)
+
+## Print Docker
+
+![](./docker.png)
