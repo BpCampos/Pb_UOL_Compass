@@ -1,3 +1,5 @@
+# Resumo de estudo
+
 # Evidências
 
 ## Tarefa 1
@@ -121,3 +123,13 @@ for palavra, quantidade in contador.items():
 ![](./evidencias/tarefa%203/Glue_ex9_s3_folder1.png)
 ![](./evidencias/tarefa%203/Glue_ex9_s3_folder2.png)
 ![](./evidencias/tarefa%203/Glue_ex9_s3_folder3.png)
+
+### Exercício Crawler
+
+### O objetivo desse exercício é desenvolver um crawler para criar uma tabela automaticamente a partir de dados escritos no s3
+
+![](./evidencias/tarefa%203/Glue_crawler.png)
+
+### Tabela criada no banco de dados glue-lab
+
+![](./evidencias/tarefa%203/Glue_crawler_table.png)
