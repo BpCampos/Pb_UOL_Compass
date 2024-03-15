@@ -36,6 +36,8 @@ for palavra, quantidade in contador.items():
 
 ### Script Spark para ler o arquivo csv do s3
 
+### [Script Ex1](./exercicios/tarefa%203/job_aws_glue_lab_ex1.py)
+
 ![](./evidencias/tarefa%203/Glue_ex1_script.png)
 
 ### Log do resultado
@@ -43,6 +45,8 @@ for palavra, quantidade in contador.items():
 ![](./evidencias/tarefa%203/Glue_ex1_log.png)
 
 ### Ex 2
+
+### [Script Ex2](./exercicios/tarefa%203/job_aws_glue_lab_ex2.py)
 
 ### Script Spark para mostrar qual o schema do DataFrame 'nomes'
 
@@ -54,6 +58,8 @@ for palavra, quantidade in contador.items():
 
 ### Ex 3
 
+### [Script Ex3](./exercicios/tarefa%203/job_aws_glue_lab_ex3.py)
+
 ### Script Spark para transformar os valores da coluna nomes para uppercase
 
 ![](./evidencias/tarefa%203/Glue_ex3_script.png)
@@ -63,6 +69,8 @@ for palavra, quantidade in contador.items():
 ![](./evidencias/tarefa%203/Glue_ex3_log.png)
 
 ### Ex 4
+
+### [Script Ex4](./exercicios/tarefa%203/job_aws_glue_lab_ex4.py)
 
 ### Script Spark para contar o número de linhas do DataFrame através do método count()
 
@@ -74,6 +82,8 @@ for palavra, quantidade in contador.items():
 
 ### Ex 5
 
+### [Script Ex5](./exercicios/tarefa%203/job_aws_glue_lab_ex5.py)
+
 ### Script Spark para contar o número de nomes agrupando por sexo e ano com groupBy()
 
 ![](./evidencias/tarefa%203/Glue_ex5_script.png)
@@ -83,6 +93,8 @@ for palavra, quantidade in contador.items():
 ![](./evidencias/tarefa%203/Glue_ex5_log.png)
 
 ### Ex 6
+
+### [Script Ex6](./exercicios/tarefa%203/job_aws_glue_lab_ex6.py)
 
 ### Script Spark para transformar a coluna 'total' em integer para que possa ser ordenada de forma decrescente e um script qque filtra a coluna sexo pelo termo 'F' para descobrir o nome feminino mais usado
 
@@ -94,6 +106,8 @@ for palavra, quantidade in contador.items():
 
 ### Ex 7
 
+### [Script Ex7](./exercicios/tarefa%203/job_aws_glue_lab_ex7.py)
+
 ### Script Spark idêntico ao anterior porém procurando através do filtro de sexo pelo termo 'M'
 
 ![](./evidencias/tarefa%203/Glue_ex7_script.png)
@@ -104,6 +118,8 @@ for palavra, quantidade in contador.items():
 
 ### Ex 8
 
+### [Script Ex8](./exercicios/tarefa%203/job_aws_glue_lab_ex8.py)
+
 ### Script Spark para mostrar o total de registros para cada ano usando groupBy() e uma função agregadora somando os totais
 
 ![](./evidencias/tarefa%203/Glue_ex8_script.png)
@@ -113,6 +129,8 @@ for palavra, quantidade in contador.items():
 ![](./evidencias/tarefa%203/Glue_ex8_log.png)
 
 ### Ex 9
+
+### [Script Ex9](./exercicios/tarefa%203/job_aws_glue_lab_ex9.py)
 
 ### Script Spark para transformar a coluna 'nomes' em uppercase e criar partições do DataFrame baseado nas colunas 'sexo' e 'ano'
 
