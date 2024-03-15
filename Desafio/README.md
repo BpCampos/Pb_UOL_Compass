@@ -2,7 +2,7 @@
 
 ## Etapa 1
 
-#### O primeiro desafio da etapa 1 foi criar o script python que será executado pelo container Docker. O script se utiliza da biblioteca boto3 para ter acesso aos recursos da AWS, através de chaves de acesso vinculadas à conta o método client() da biblioteca
+#### A primeira tarefa da etapa 1 foi criar um script Python que será posteriormente executado por um container Docker. O script se utiliza da biblioteca boto3 para ter acesso aos recursos da AWS, através de chaves de acesso vinculadas à conta, chaves essas utilizadas pelo método client() da biblioteca boto3
 
 ### [Script Python](./etapa-1/desafio_pt1.py)
 
