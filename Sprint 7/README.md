@@ -133,3 +133,13 @@ for palavra, quantidade in contador.items():
 ### Tabela criada no banco de dados glue-lab
 
 ![](./evidencias/tarefa%203/Glue_crawler_table.png)
+
+# Certificados
+
+### Learn By Example: Hadoop, MapReduce for Big Data problems
+
+![](./certificados/Hadoop.jpg)
+
+### Formação Spark com Pyspark : o Curso Completo
+
+![](./certificados/Spark.jpg)
