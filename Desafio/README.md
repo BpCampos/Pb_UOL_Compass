@@ -1,21 +1,7 @@
-
-# Instruções
-
-
-Neste arquivo você irá apresentar suas entregas referentes ao desafio final. 
-O desafio final está dividido em 4 entregas, sendo a primeira a ser realizada ao final da Sprint 7. Utilize o diretório "Desafio" para organizar seus artefatos e este README.md para fazer referência aos arquivos de código-fonte e demais entregáveis solicitados.
-
-
 # Etapas
 
+## Etapa 1
 
-1. ...
-[Etapa I](etapa-1/entrega.txt)
+### O primeiro desafio da etapa 1 foi criar o script python que será executado pelo container Docker. O script se utiliza da bibliota boto3 para ter acesso aos recursos da AWS, através de chaves de acesso vinculadas a conta
 
-
-2. ...
-[Etapa II](etapa-2/entrega.txt)
-
-
-
-
+### [Script Python](./etapa-1/desafio_pt1.py)
