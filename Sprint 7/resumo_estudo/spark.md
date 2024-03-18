@@ -18,7 +18,7 @@
 - O Spark trabalha em `Lazy Evaluation`, ou seja o processamento de transformações de fato só ocorre quando há uma `ação`, como mostrar os dados por exemplo
 - Transformações são todas operações sobre um DataFrame que resultam num `novo DataFrame` com forma ou dados alterados.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/51282dd0-38dd-4009-bfbb-3f8d4cadedd6/64c00ecc-6c21-4042-8530-f7f8935863a1/Untitled.png)
+![Untitled](./)
 
 - As aplicações Spark são executados como conjuntos independentes de processos em um cluster, coordenados pelo objeto `SparkContext` em seu programa principal
 - Para ser executado em um cluster, o `SparkContext` pode se conectar a vários tipos de
@@ -59,7 +59,7 @@
 - `spark.createDataFrame(<valores>)` → cria um data frame através do valores passados por uma lista
 - Exemplo de dados para usar na criação de um `DataFrame`
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/51282dd0-38dd-4009-bfbb-3f8d4cadedd6/e66af5d5-38a3-4cf8-8ba0-991810373a2f/Untitled.png)
+![Untitled](./Untitled2.png)
 
 - `<nome_do_dataframe>.show()` → mostra as colunas do data frame criado
 - `schema` → serve para indicar os tipos doados dos dados que serão criados e os seus respectivos nomes/identificadores. E.g. schema = `“Produtos STRING, Vendas INT”`
