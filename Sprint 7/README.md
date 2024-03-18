@@ -1,5 +1,19 @@
 # Resumo de estudo
 
+### Spark
+
+- É uma ferramenta de processamento de dados
+- Distribuído em cluster
+- Os dados que o spark processa são copiados entre os nós do cluster, trazendo benefícios como `tolerância a falhas`
+- O Spark trabalha em `Lazy Evaluation`, ou seja o processamento de transformações de fato só ocorre quando há uma ação, como mostrar os dados por exemplo
+- `R`esilient `D`istributed `D`atasets → É uma estrutura básica de baixo nível contendo dados imutáveis, distribuídos pelo cluster. Por estar distribuído no cluster, ele é tolerante a falhas
+- Data Frames são:
+  - Tabelas com linhas e colunas
+  - Imutáveis
+  - Com Schema conhecido
+
+### [Anotações completas](./resumo_estudo/spark.md)
+
 # Evidências
 
 ## Tarefa 1
