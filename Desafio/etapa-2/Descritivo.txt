@@ -9,3 +9,7 @@ Endpoint: https://api.themoviedb.org/3/tv/{series_id}
 Receita e orçamento médio dos filmes/séries de romance, para verificar se os filmes e séries do gênero romance costumam dar lucro ou prejuízo
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 Endpoint: https://api.themoviedb.org/3/tv/{series_id}
+
+Separa as produção de romance por lingua de origem para entender, quais países são responsáveis por quais quantidades de filmes e séries de romance
+Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
+Endpoint: https://api.themoviedb.org/3/tv/{series_id}
