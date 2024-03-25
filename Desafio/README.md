@@ -19,3 +19,7 @@
 ### Print do arquivo series.csv no bucket s3 no caminho: desafiofinalcompass/Raw/local/CSV/Series/2024/03/15/
 
 ![](./etapa-1/series_csv.png)
+
+## Etapa 2
+
+### [Descritivo](./etapa-2/Descritivo.txt)
