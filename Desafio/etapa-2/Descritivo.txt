@@ -3,13 +3,19 @@ Endpoint: https://api.themoviedb.org/3/movie/top_rated
 Endpoint: https://api.themoviedb.org/3/tv/top_rated
 
 Duração média dos filmes/séries de romance, que será comparada com o orçamento médio dos filmes e séries de romance para entender a relação entre duração e orçamento para produção
+Endpoint: https://api.themoviedb.org/3/discover/movie
+Endpoint: https://api.themoviedb.org/3/discover/tv
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 Endpoint: https://api.themoviedb.org/3/tv/{series_id}
 
 Receita e orçamento médio dos filmes/séries de romance, para verificar se os filmes e séries do gênero romance costumam dar lucro ou prejuízo
+Endpoint: https://api.themoviedb.org/3/discover/movie
+Endpoint: https://api.themoviedb.org/3/discover/tv
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 Endpoint: https://api.themoviedb.org/3/tv/{series_id}
 
 Separar as produções de romance por língua de origem para entender quais países são responsáveis por quais quantidades de filmes e séries de romance
+Endpoint: https://api.themoviedb.org/3/discover/movie
+Endpoint: https://api.themoviedb.org/3/discover/tv
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 Endpoint: https://api.themoviedb.org/3/tv/{series_id}
