@@ -1,13 +1,12 @@
-Duração média dos filmes de romance e drama, que será comparada com o orçamento médio dos filmes e séries de romance para entender a relação entre duração e orçamento para produção
+Perguntas:
+Qual a duração média dos filmes de romance e drama e qual a sua relação com o orçamento desses filmes?
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 
-Receita e orçamento médio dos filmes de romance e drama, para verificar se os filmes do gênero romance costumam dar lucro ou prejuízo
+Qual o orçamento e a receita média dos filmes de romance e drama? Para entender se os filmes desse gêneros tendem a dar lucro ou prejuízo
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 
-Separar as produções de romance e drama por língua de origem para entender quais países são responsáveis por quais quantidades de filmes de romance e drama
+Quais as línguas de origem dos filmes de romance e drama dos últimos 50 anos? Para saber os principais países que produzem filmes de dados gêneros
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
-Endpoint: https://api.themoviedb.org/3/discover/tv
-Endpoint: https://api.themoviedb.org/3/tv/{movie_id}
