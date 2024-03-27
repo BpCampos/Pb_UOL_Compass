@@ -32,6 +32,10 @@
 
 ![](./etapa-2/tmdb_romance.png)
 
+### Trigger para a **função 1** executado no primeiro dia de cada mês
+
+![](./etapa-2/lambda_trigger.png)
+
 ### **Função 2** - Filmes de drama adquiridos através da API do tmdb pelo endpoint: 'discover'
 
 ![](./etapa-2/tmdb_drama.png)
