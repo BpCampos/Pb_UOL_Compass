@@ -46,7 +46,7 @@
 
 ![](./etapa-2/tmdb_externo_romance.png)
 
-### **Função 4** - ilmes de drama adquiridos através do ID do documento movies.csv usando a API do tmdb
+### **Função 4** - Filmes de drama adquiridos através do ID do documento movies.csv usando a API do tmdb
 
 ![](./etapa-2/tmdb_externo_drama.png)
 
