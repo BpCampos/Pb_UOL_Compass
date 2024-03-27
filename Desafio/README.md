@@ -52,6 +52,6 @@
 
 ## s3
 
-### Arquivos em formato `json` com 100 resultados em cada guardados no data lake s3 criado para o desafio final
+### Arquivos em formato `json` com 100 resultados em cada, guardados no data lake s3 criado para o desafio final
 
 ![](./etapa-2/s3_bucket_tmdb.png)
