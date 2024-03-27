@@ -1,5 +1,5 @@
-animais = ['abelha', 'abutre', 'águia', 'alce', 'alpaca', 'cabra', 'cachorro',
-           'cágado', 'camarão', 'camelo', 'jabuti', 'jacaré', 'jacu', 'jaguar', 'jegue', 'panda', 'pantera', 'papagaio', 'pardal', 'pássaro',]
+animais = ['abelha', 'abutre', 'aguia', 'alce', 'alpaca', 'cabra', 'cachorro',
+           'cagado', 'camarao', 'camelo', 'jabuti', 'jacare', 'jacu', 'jaguar', 'jegue', 'panda', 'pantera', 'papagaio', 'pardal', 'passaro',]
 
 for i in sorted(animais):
     print(i)

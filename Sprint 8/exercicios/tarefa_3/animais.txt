@@ -1,14 +1,15 @@
 abelha
 abutre
+aguia
 alce
 alpaca
 cabra
 cachorro
-camarão
+cagado
+camarao
 camelo
-cágado
 jabuti
-jacaré
+jacare
 jacu
 jaguar
 jegue
@@ -16,5 +17,4 @@ panda
 pantera
 papagaio
 pardal
-pássaro
-águia
+passaro
