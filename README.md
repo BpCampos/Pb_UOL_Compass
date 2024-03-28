@@ -52,4 +52,4 @@ Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunoca
 
 ## Desafio parte 2 - Sprint 8
 
-### [Readme do desafio](./Desafio/etapa-2/)
+### [Readme do desafio](./Desafio/etapa-2/readme_etapa2.md)
