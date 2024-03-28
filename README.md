@@ -46,6 +46,10 @@ Além dos conhecimentos acima, montei um [portifólio](https://portfolio-brunoca
 
 ## Desafio
 
-1. [Desafio Final](Desafio/README.md)
+## Desafio parte 1 - Sprint 7
 
----
+### [Readme do desafio](./Desafio/etapa-1/readme_etapa1.md)
+
+## Desafio parte 2 - Sprint 8
+
+### [Readme do desafio](./Desafio/etapa-2/)
