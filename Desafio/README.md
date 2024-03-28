@@ -1,6 +1,6 @@
 # Etapas
 
-## Etapa 1
+## Etapa 1 - Sprint 7
 
 #### A primeira tarefa da etapa 1 foi criar um script Python que será posteriormente executado por um container Docker. O script se utiliza da biblioteca boto3 para ter acesso aos recursos da AWS, através de chaves de acesso vinculadas à conta, chaves essas utilizadas pelo método client() da biblioteca boto3
 
@@ -20,7 +20,7 @@
 
 ![](./etapa-1/series_csv.png)
 
-## Etapa 2
+## Etapa 2 - Sprin 8
 
 #### Nesta etapa do desafio final, foram criadas funções através do serviço AWS Lambda para pegar dados da API de filmes e séries TMDB e salvar esses dados no Amazon s3, utilizando a linguagem Python com bibliotecas como requests e boto3
 
