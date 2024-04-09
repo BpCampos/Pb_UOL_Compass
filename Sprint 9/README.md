@@ -1,18 +1,21 @@
-# Exercícios
-
-1. ...
-   [Resposta Ex1.](exercicios/ex1.txt)
-
-2. ...
-   [Resposta Ex2.](exercicios/ex2.txt)
-
 # Evidências
 
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
+## Tarefa 1 - Nomralização
 
-![Evidencia 1](evidencias/sample.webp)
+### O objetivo da tarefa 1 é, através de uma base de dados sqlite, normalizar os dados da tabela tb_locacao, possivelmente criando outras tabelas menores para guardarem os dados da tabela principal, que poderão se relacionar entre si.
 
-# Certificados
+### [Script SQL de normalização](./evidencias/Script_normalizacao.sql)
 
-- Certificado do Curso ABC
-  ![Curso ABC](certificados/sample.png)
+### Modelagem Lógica feita no SQL Client DBeaver utilizando devidos relacionamentos entre as tabelas
+
+### ![](./evidencias/ModelagemLogica-2.png)
+
+## Tarefa 2 - Modelagem Dimensional
+
+### Com os dados já normalizados, o objetivo dessa tarefa é transformar as tabelas e seus dados em um Modelo Dimensional, criando tabelas de dimensões e fatos para que seja facilitada a análise dos dados por meio de ferramentas OLAP, fazendo com que esses dados possam ser analisados através de multiplas perspectivas
+
+### [Script SQL para o Modelo Dimensional](./evidencias/script_dimensional.sql)
+
+### Modelagem Dimensional feita no Drawio utilizando devidos relacionamentos entre as tabelas
+
+![](./evidencias/ModelagemDimensional.drawio.png)
