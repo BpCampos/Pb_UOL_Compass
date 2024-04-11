@@ -1,6 +1,6 @@
 # Etapa 2 - Sprint 8
 
-#### Nesta etapa do desafio final, foram criadas funções através do serviço AWS Lambda para pegar dados da API de filmes e séries TMDB e salvar esses dados no Amazon s3, utilizando a linguagem Python com bibliotecas como requests e boto3
+### Nesta etapa do desafio final, foram criadas funções através do serviço AWS Lambda para pegar dados da API de filmes e séries TMDB e salvar esses dados no Amazon s3, utilizando a linguagem Python com bibliotecas como requests e boto3
 
 ### [Descritivo das futuras análises dos dados](./Descritivo.txt)
 
