@@ -31,97 +31,98 @@ for column in [column for column in df_csv.columns if column not in df_json.colu
 merged_df = df_csv.unionByName(df_json)
 
 # DataFrame correspondente à dimensão idioma original
-dim_idiomaOriginal = merged_df.select('original_language')
-dim_idiomaOriginal = dim_idiomaOriginal.dropna(
+dim_idioma_original = merged_df.select('original_language')
+dim_idioma_original = dim_idioma_original.dropna(
     how='any', subset=None).dropDuplicates()
-dim_idiomaOriginal = dim_idiomaOriginal.withColumn(
-    'codIdiomaOriginal', lit(monotonically_increasing_id()))
-dim_idiomaOriginal = dim_idiomaOriginal.select(
-    'codIdiomaOriginal', col('original_language').alias('idiomaOriginal'))
-dim_idiomaOriginal.write.format('parquet').save(
-    f'{target_path}/dim_idiomaOriginal')
+dim_idioma_original = dim_idioma_original.withColumn(
+    'cod_idioma_original', lit(monotonically_increasing_id()))
+dim_idioma_original = dim_idioma_original.select(
+    'cod_idioma_original', col('original_language').alias('idioma_original'))
+dim_idioma_original.write.format('parquet').save(
+    f'{target_path}/dim_idioma_original')
 
 # DataFrame correspondente à dimensão idioma falado
-dim_idiomaFalado = merged_df.select(explode('spoken_languages').alias('dict')).select(col(
+dim_idioma_falado = merged_df.select(explode('spoken_languages').alias('dict')).select(col(
     'dict.english_name').alias('idioma'), col('dict.iso_639_1').alias('abreviacao')).dropDuplicates()
-dim_idiomaFalado = dim_idiomaFalado.withColumn(
-    'codIdiomaFalado', lit(monotonically_increasing_id()))
-dim_idiomaFalado = dim_idiomaFalado.select(
-    'codIdiomaFalado', 'idioma', 'abreviacao')
-dim_idiomaFalado.write.format('parquet').save(
-    f'{target_path}/dim_idiomaFalado')
+dim_idioma_falado = dim_idioma_falado.withColumn(
+    'cod_idioma_falado', lit(monotonically_increasing_id()))
+dim_idioma_falado = dim_idioma_falado.select(
+    'cod_idioma_falado', 'idioma', 'abreviacao')
+dim_idioma_falado.write.format('parquet').save(
+    f'{target_path}/dim_idioma_falado')
 
 # DataFrame correspondente à dimensão tempo
-dim_tempo = merged_df.select('release_date', 'anoLancamento')
-dim_tempo = dim_tempo.withColumn('anoLancamento', coalesce(
-    year(dim_tempo['release_date']), col('anoLancamento')))
+dim_tempo = merged_df.select('release_date', col(
+    'anoLancamento').alias('ano_lancamento'))
+dim_tempo = dim_tempo.withColumn('ano_lancamento', coalesce(
+    year(dim_tempo['release_date']), col('ano_lancamento')))
 dim_tempo = dim_tempo.withColumn(
-    'mesLancamento', month(dim_tempo['release_date']))
+    'mes_lancamento', month(dim_tempo['release_date']))
 dim_tempo = dim_tempo.withColumn(
-    'diaLancamento', dayofmonth(dim_tempo['release_date']))
+    'dia_lancamento', dayofmonth(dim_tempo['release_date']))
 dim_tempo = dim_tempo.select(col('release_date').alias(
-    'dataLancamento'), 'anoLancamento', 'mesLancamento', 'diaLancamento')
+    'data_lancamento'), 'ano_lancamento', 'mes_lancamento', 'dia_lancamento')
 dim_tempo.write.format('parquet').save(f'{target_path}/dim_tempo')
 
 # DataFrame correspondente à dimensão países produtores
-dim_paisesProdutores = merged_df.select(explode('production_countries').alias('dict')).select(
+dim_paises_produtores = merged_df.select(explode('production_countries').alias('dict')).select(
     col('dict.iso_3166_1').alias('sigla'), col('dict.name').alias('pais')).dropDuplicates()
-dim_paisesProdutores = dim_paisesProdutores.withColumn(
-    'codPaisesProd', lit(monotonically_increasing_id()))
-dim_paisesProdutores = dim_paisesProdutores.select(
-    'codPaisesProd', 'pais', 'sigla')
-dim_paisesProdutores.write.format('parquet').save(
-    f'{target_path}/dim_paisesProdutores')
+dim_paises_produtores = dim_paises_produtores.withColumn(
+    'cod_paises_prod', lit(monotonically_increasing_id()))
+dim_paises_produtores = dim_paises_produtores.select(
+    'cod_paises_prod', 'pais', 'sigla')
+dim_paises_produtores.write.format('parquet').save(
+    f'{target_path}/dim_paises_produtores')
 
 # DataFrame correspondente à dimensão genero
 dim_genero = merged_df.select(explode('genres').alias('dict')).select(col('dict.id').alias(
-    'codGenero'), col('dict.name').alias('genero')).dropDuplicates().sort(col('codGenero'))
+    'cod_genero'), col('dict.name').alias('genero')).dropDuplicates().sort(col('cod_genero'))
 dim_genero.write.format('parquet').save(f'{target_path}/dim_genero')
 
 # DataFrame correspondente à dimensão produtora
-dim_produtora = merged_df.select(explode('production_companies').alias('dict')).select(col('dict.id').alias('codProdutora'), col(
-    'dict.name').alias('nome'), col('dict.origin_country').alias('pais')).dropDuplicates().sort(col('codProdutora'))
+dim_produtora = merged_df.select(explode('production_companies').alias('dict')).select(col('dict.id').alias('cod_produtora'), col(
+    'dict.name').alias('nome'), col('dict.origin_country').alias('pais')).dropDuplicates().sort(col('cod_produtora'))
 dim_produtora.write.format('parquet').save(f'{target_path}/dim_produtora')
 
 # DataFrame correspondente à tabela fato filme
-fato_filme = merged_df.select('id', coalesce(col('tituloOriginal'), col('original_title')).alias('tituloOriginal'), coalesce(col('tituloPincipal'), col('title')).alias('tituloPrincipal'),
-                              coalesce(col('tempoMinutos'), col('runtime')).alias('duracaoMinutos'), col('release_date').alias(
-                                  'dataLancamento'), 'anoLancamento', coalesce(col('notaMedia'), col('vote_average')).alias('notaMedia'),
-                              coalesce(col('numeroVotos'), col('vote_count')).alias('numeroVotos'), col(
-                                  'budget').alias('orcamento'), coalesce(col('imdb_id'), col('id')).alias('idImdb'),
-                              col('overview').alias('visaoGeral'), col('popularity').alias('popularidade'), col('revenue').alias('receita'), col('tagline').alias('slogan'))
+fato_filme = merged_df.select('id', coalesce(col('tituloOriginal'), col('original_title')).alias('titulo_original'), coalesce(col('tituloPincipal'), col('title')).alias('titulo_principal'),
+                              coalesce(col('tempoMinutos'), col('runtime')).alias('duracao_minutos'), col('release_date').alias('data_lancamento'), col(
+                                  'anoLancamento').alias('ano_lancamento'), coalesce(col('notaMedia'), col('vote_average')).alias('nota_media'),
+                              coalesce(col('numeroVotos'), col('vote_count')).alias('numero_votos'), col(
+                                  'budget').alias('orcamento'), coalesce(col('imdb_id'), col('id')).alias('id_imdb'),
+                              col('overview').alias('visao_geral'), col('popularity').alias('popularidade'), col('revenue').alias('receita'), col('tagline').alias('slogan'))
 
 # Adiciona os ids da dim_produtora à tabela fato_filme
 produtora_df = merged_df.select(col('id').alias('temp_id'), explode(
     'production_companies.id').alias('produtora'))
 produtora_df = produtora_df.join(
-    dim_produtora, produtora_df.produtora == dim_produtora.codProdutora)
+    dim_produtora, produtora_df.produtora == dim_produtora.cod_produtora)
 fato_filme = fato_filme.join(produtora_df, fato_filme.id == produtora_df.temp_id, 'left_outer').drop(
     'temp_id', 'produtora', 'pais', 'nome')
 
-# Adiciona os ids da dim_idiomaFalado à tabela fato_filme
-idiomaFalado_df = merged_df.select(col('id').alias(
-    'temp_id'), explode('spoken_languages').alias('idiomaFalado'))
-idiomaFalado_df = idiomaFalado_df.join(
-    dim_idiomaFalado, idiomaFalado_df.idiomaFalado.english_name == dim_idiomaFalado.idioma)
-fato_filme = fato_filme.join(idiomaFalado_df, fato_filme.id == idiomaFalado_df.temp_id, 'left_outer').drop(
-    'temp_id', 'idioma', 'abreviacao', 'idiomaFalado')
+# Adiciona os ids da dim_idioma_falado à tabela fato_filme
+idioma_falado_df = merged_df.select(col('id').alias(
+    'temp_id'), explode('spoken_languages').alias('idioma_falado'))
+idioma_falado_df = idioma_falado_df.join(
+    dim_idioma_falado, idioma_falado_df.idioma_falado.english_name == dim_idioma_falado.idioma)
+fato_filme = fato_filme.join(idioma_falado_df, fato_filme.id == idioma_falado_df.temp_id, 'left_outer').drop(
+    'temp_id', 'idioma', 'abreviacao', 'idioma_falado')
 
-# Adiciona os ids da dim_paisesProdutores à tabela fato_filme
-paisesProdutores_df = merged_df.select(col('id').alias(
-    'temp_id'), explode('production_countries').alias('paisesProdutores'))
-paisesProdutores_df = paisesProdutores_df.join(
-    dim_paisesProdutores, paisesProdutores_df.paisesProdutores['name'] == dim_paisesProdutores.pais)
-fato_filme = fato_filme.join(paisesProdutores_df, fato_filme.id == paisesProdutores_df.temp_id,
-                             'left_outer').drop('temp_id', 'paisesProdutores', 'pais', 'sigla')
+# Adiciona os ids da dim_paises_produtores à tabela fato_filme
+paises_produtores_df = merged_df.select(col('id').alias(
+    'temp_id'), explode('production_countries').alias('paises_produtores'))
+paises_produtores_df = paises_produtores_df.join(
+    dim_paises_produtores, paises_produtores_df.paises_produtores['name'] == dim_paises_produtores.pais)
+fato_filme = fato_filme.join(paises_produtores_df, fato_filme.id == paises_produtores_df.temp_id,
+                             'left_outer').drop('temp_id', 'paises_produtores', 'pais', 'sigla')
 
-# Adiciona os ids da dim_idiomaOriginal à tabela fato_filme
-idiomaOriginal_df = merged_df.select(
+# Adiciona os ids da dim_idioma_original à tabela fato_filme
+idioma_original_df = merged_df.select(
     col('id').alias('temp_id'), 'original_language')
-idiomaOriginal_df = idiomaOriginal_df.join(
-    dim_idiomaOriginal, idiomaOriginal_df.original_language == dim_idiomaOriginal.idiomaOriginal)
-fato_filme = fato_filme.join(idiomaOriginal_df, fato_filme.id == idiomaOriginal_df.temp_id, 'left_outer').drop(
-    'temp_id', 'original_language', 'idiomaOriginal')
+idioma_original_df = idioma_original_df.join(
+    dim_idioma_original, idioma_original_df.original_language == dim_idioma_original.idioma_original)
+fato_filme = fato_filme.join(idioma_original_df, fato_filme.id == idioma_original_df.temp_id, 'left_outer').drop(
+    'temp_id', 'original_language', 'idioma_original')
 
 # Adiciona os ids da dim_genero à tabela fato_filme
 genero_df = merged_df.select(col('id').alias(
@@ -130,7 +131,7 @@ genero_df = genero_df.join(
     dim_genero, genero_df.genero_filme == dim_genero.genero)
 fato_filme = fato_filme.join(genero_df, fato_filme.id == genero_df.temp_id, 'left_outer').drop(
     'temp_id', 'genero', 'genero_filme')
-fato_filme = fato_filme.withColumnRenamed('codGenero', 'codGenero1')
+fato_filme = fato_filme.withColumnRenamed('cod_genero', 'cod_genero1')
 
 genero_df2 = merged_df.select(col('id').alias(
     'temp_id'), col('genero').alias('nome'))
@@ -138,21 +139,21 @@ genero_df2 = genero_df2.join(
     dim_genero, genero_df2.nome == dim_genero.genero).drop('nome')
 fato_filme = fato_filme.join(genero_df2, fato_filme.id ==
                              genero_df2.temp_id, 'left_outer').drop('temp_id', 'genero')
-fato_filme = fato_filme.withColumnRenamed('codGenero', 'codGenero2')
+fato_filme = fato_filme.withColumnRenamed('cod_genero', 'cod_genero2')
 
-fato_filme = fato_filme.select('*', coalesce(col('codGenero1'), col(
-    'codGenero2')).alias('codGenero')).drop('codGenero1', 'codGenero2')
+fato_filme = fato_filme.select('*', coalesce(col('cod_genero1'), col(
+    'cod_genero2')).alias('cod_genero')).drop('cod_genero1', 'cod_genero2')
 
 fato_filme = fato_filme.withColumn(
-    'duracaoMinutos', col('duracaoMinutos').cast('integer'))
+    'duracao_minutos', col('duracao_minutos').cast('integer'))
 fato_filme = fato_filme.withColumn(
-    'anoLancamento', col('anoLancamento').cast('integer'))
+    'ano_lancamento', col('ano_lancamento').cast('integer'))
 fato_filme = fato_filme.withColumn(
-    'dataLancamento', to_date(col('dataLancamento'), 'yyyy-MM-dd'))
+    'data_lancamento', to_date(col('data_lancamento'), 'yyyy-MM-dd'))
 fato_filme = fato_filme.withColumn(
-    'notaMedia', col('notaMedia').cast('double'))
+    'nota_media', col('nota_media').cast('double'))
 fato_filme = fato_filme.withColumn(
-    'numeroVotos', col('numeroVotos').cast('integer'))
+    'numero_votos', col('numero_votos').cast('integer'))
 
 fato_filme = fato_filme.coalesce(1)
 fato_filme.write.format('parquet').save(f'{target_path}/fato_filme')
