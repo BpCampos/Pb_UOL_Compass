@@ -18,14 +18,6 @@
 
 ![](./csv_parquet.png)
 
-### Screenshot query feita no arquivo em parquet dos dados oriundos do TMDB na camada Trusted
-
-## ![](./query_json_Trusted.png)
-
-### Screenshot query feita no arquivo em parquet dos dados oriundos do CSV na camada Trusted
-
-## ![](./query_csv_Trusted.png)
-
 ### Screenshot dados em parquet oriundos do CSV na camada Trusted
 
 ## ![](./camada_trusted.png)
@@ -33,6 +25,14 @@
 ### Screenshot dados em parquet oriundos da API TMDB na camada Trusted
 
 ## ![](./arquivos_json_trusted.png)
+
+### Screenshot query feita no arquivo em parquet dos dados oriundos do TMDB na camada Trusted
+
+## ![](./query_json_Trusted.png)
+
+### Screenshot query feita no arquivo em parquet dos dados oriundos do CSV na camada Trusted
+
+## ![](./query_csv_Trusted.png)
 
 ## 2 - Modelagem de dados da Refined
 
