@@ -16,7 +16,23 @@
 
 ### Screenshot job Spark para arquivos em CSV
 
-### ![](./csv_parquet.png)
+![](./csv_parquet.png)
+
+### Screenshot query feita no arquivo em parquet dos dados oriundos do TMDB na camada Trusted
+
+## ![](./query_json_Trusted.png)
+
+### Screenshot query feita no arquivo em parquet dos dados oriundos do CSV na camada Trusted
+
+## ![](./query_csv_Trusted.png)
+
+### Screenshot dados em parquet oriundos do CSV na camada Trusted
+
+## ![](./camada_trusted.png)
+
+### Screenshot dados em parquet oriundos da API TMDB na camada Trusted
+
+## ![](./arquivos_json_trusted.png)
 
 ## 2 - Modelagem de dados da Refined
 
@@ -37,6 +53,14 @@
 ### Screenshot job Spark de criação das tabelas
 
 ![](./parquet_refined.png)
+
+### Screenshot tabelas no Data Lake s3
+
+![](./tabelas_s3_refined.png)
+
+### Screenshot query dos dados da tabela fato_filme
+
+![](./query_fato_filme.png)
 
 ### Screenshot do crawler utilizado para a criação das tabelas
 
