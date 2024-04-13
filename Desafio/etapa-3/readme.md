@@ -22,7 +22,7 @@
 
 ## ![](./camada_trusted.png)
 
-### Screenshot dados em parquet oriundos da API TMDB na camada Trusted
+### Screenshot dados em parquet oriundos da API TMDB na camada Trusted particionados por data de coleto
 
 ## ![](./arquivos_json_trusted.png)
 
@@ -50,11 +50,11 @@
 
 ### [Script Spark para criação das tabelas](./parquet_refined.py)
 
-### Screenshot job Spark de criação das tabelas
+### Screenshot job Spark de criação das tabelas fato e dimensão
 
 ![](./parquet_refined.png)
 
-### Screenshot tabelas no Data Lake s3
+### Screenshot tabelas no Data Lake s3 na camada Refined
 
 ![](./tabelas_s3_refined.png)
 
