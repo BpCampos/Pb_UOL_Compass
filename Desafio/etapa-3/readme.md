@@ -22,11 +22,11 @@
 
 ## ![](./camada_trusted.png)
 
-### Screenshot dados em parquet oriundos da API TMDB na camada Trusted particionados por data de coleto
+### Screenshot dados em parquet oriundos da API TMDB na camada Trusted particionados por data de coleta
 
 ## ![](./arquivos_json_trusted.png)
 
-### Screenshot query feita no arquivo em parquet dos dados oriundos do TMDB na camada Trusted
+### Screenshot query feita no arquivo em parquet dos dados oriundos da API TMDB na camada Trusted
 
 ## ![](./query_json_Trusted.png)
 
@@ -36,7 +36,7 @@
 
 ## 2 - Modelagem de dados da Refined
 
-### Essa etapa compreendeu a criação do modelo dimensional no qual os dados em parquet da camada `Trusted` seguirão. O modelo foi feito através da plataforma `draw.io` e contém todas as tabelas dimensão que serão necessárias para se ter uma melhor uma vizualização de cada filme da tabela `fato_filme` e as seus respectivos relacionamentos entre as tabelas sendo eles tanto de um para muitos quanto de muitos para muitos em alguns casos
+### Essa etapa compreendeu a criação do modelo dimensional no qual os dados em parquet da camada `Trusted` seguirão. O modelo foi feito através da plataforma `draw.io` e contém todas as tabelas dimensão que serão necessárias para se ter uma melhor uma vizualização e maior quantidade de informações sobre cada filme da tabela `fato_filme` e os respectivos relacionamentos entre as tabelas sendo eles tanto de **um para muitos** quanto de **muitos para muitos** em alguns casos
 
 ### [Arquivo draw io do modelo dimensional](./modelagem.drawio)
 
