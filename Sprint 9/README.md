@@ -1,6 +1,6 @@
 # Evidências
 
-## Tarefa 1 - Nomralização
+## Tarefa 1 - Normalização
 
 ### O objetivo da tarefa 1 é, através de uma base de dados sqlite, normalizar os dados da tabela tb_locacao, possivelmente criando outras tabelas menores para guardarem os dados da tabela principal, que poderão se relacionar entre si.
 
