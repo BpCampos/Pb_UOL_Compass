@@ -38,8 +38,7 @@ dim_idioma_original = dim_idioma_original.withColumn(
     'cod_idioma_original', lit(monotonically_increasing_id()))
 dim_idioma_original = dim_idioma_original.select(
     'cod_idioma_original', col('original_language').alias('idioma_original'))
-dim_idioma_original.write.format('parquet').save(
-    f'{target_path}/dim_idioma_original')
+# dim_idioma_original.write.format('parquet').save(f'{target_path}/dim_idioma_original')
 
 # DataFrame correspondente à dimensão tempo
 dim_tempo = merged_df.select(col('release_date').alias('data_lancamento'))
@@ -49,8 +48,8 @@ dim_tempo = dim_tempo.withColumn(
     'mes_lancamento', month(dim_tempo['data_lancamento']))
 dim_tempo = dim_tempo.withColumn(
     'dia_lancamento', dayofmonth(dim_tempo['data_lancamento']))
-dim_tempo = dim_tempo.select(to_date(col('data_lancamento'), 'yyyy-MM-dd').alias(
-    'data_lancamento'), 'ano_lancamento', 'mes_lancamento', 'dia_lancamento')
+dim_tempo = dim_tempo.select(to_date(col('data_lancamento'), 'yyyy-MM-dd').alias('data_lancamento'), 'ano_lancamento',
+                             'mes_lancamento', 'dia_lancamento').dropna(how='any', subset=None).dropDuplicates().coalesce(1)
 dim_tempo.write.format('parquet').save(f'{target_path}/dim_tempo')
 
 # DataFrame correspondente à dimensão países produtores
@@ -60,13 +59,12 @@ dim_paises_produtores = dim_paises_produtores.withColumn(
     'cod_paises_prod', lit(monotonically_increasing_id()))
 dim_paises_produtores = dim_paises_produtores.select(
     'cod_paises_prod', 'pais', 'sigla')
-dim_paises_produtores.write.format('parquet').save(
-    f'{target_path}/dim_paises_produtores')
+# dim_paises_produtores.write.format('parquet').save(f'{target_path}/dim_paises_produtores')
 
 # DataFrame correspondente à dimensão genero
 dim_genero = merged_df.select(explode('genres').alias('dict')).select(col('dict.id').alias(
     'cod_genero'), col('dict.name').alias('genero')).dropDuplicates().sort(col('cod_genero'))
-dim_genero.write.format('parquet').save(f'{target_path}/dim_genero')
+# dim_genero.write.format('parquet').save(f'{target_path}/dim_genero')
 
 # DataFrame correspondente à tabela fato filme
 fato_filme = merged_df.select('id', coalesce(col('tituloPincipal'), col('title')).alias('titulo_principal'),
@@ -122,6 +120,6 @@ fato_filme = fato_filme.withColumn(
     'numero_votos', col('numero_votos').cast('integer'))
 
 fato_filme = fato_filme.coalesce(1)
-fato_filme.write.format('parquet').save(f'{target_path}/fato_filme')
+# fato_filme.write.format('parquet').save(f'{target_path}/fato_filme')
 
 job.commit()
