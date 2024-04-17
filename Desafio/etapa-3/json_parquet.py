@@ -26,8 +26,8 @@ data = source_file[len(source_file) -
 
 df_with_date = tmdb.withColumn("dt", lit(data))
 
-df_transformed = df_with_date.drop("adult", "belongs_to_collection", "backdrop_path",
-                                   "homepage", "poster_path", "status_code", "status_message", "success", "status", "video")
+df_transformed = df_with_date.drop("adult", "belongs_to_collection", "backdrop_path", "homepage", "poster_path", "status_code",
+                                   "status_message", "success", "status", "video", "overview", "production_companies", "spoken_languages", "tagline", "original_title")
 
 df_transformed = df_transformed.dropDuplicates()
 

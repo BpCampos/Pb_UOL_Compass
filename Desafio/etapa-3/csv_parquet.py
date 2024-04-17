@@ -21,8 +21,8 @@ target_path = args['S3_TARGET_PATH']
 
 df_csv = spark.read.csv(source_file, header=True, sep='|')
 
-df_csv_filtrado = df_csv.drop("generoArtista", "nomeArtista", "anoNascimento",
-                              "anoFalecimento", "profissao", "titulosMaisConhecidos", "personagem")
+df_csv_filtrado = df_csv.drop("generoArtista", "nomeArtista", "anoNascimento", "anoFalecimento",
+                              "profissao", "titulosMaisConhecidos", "personagem", "tituloOriginal", "anoLancamento")
 
 df_csv_filtrado = df_csv_filtrado.filter(
     (col('genero') == 'Drama') | (col('genero') == 'Romance')).dropDuplicates()
