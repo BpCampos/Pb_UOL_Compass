@@ -3,10 +3,14 @@ Qual a duração média dos filmes de romance e drama e qual a sua relação com
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 
+Entender quais paises produtores de filmes possuem a maior receita por filmes e o maior orçamento, filtrado por continente
+Endpoint: https://api.themoviedb.org/3/discover/movie
+Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
+
 Qual o orçamento e a receita média dos filmes de romance e drama? Para entender se os filmes desse gêneros tendem a dar lucro ou prejuízo
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
 
-Quais as línguas de origem dos filmes de romance e drama dos últimos 50 anos? Para saber os principais países que produzem filmes de dados gêneros
+Filtrar os dados por continente para entender o orçamento e a receita média de cada um para filmes de romance ou drama
 Endpoint: https://api.themoviedb.org/3/discover/movie
 Endpoint: https://api.themoviedb.org/3/movie/{movie_id}
