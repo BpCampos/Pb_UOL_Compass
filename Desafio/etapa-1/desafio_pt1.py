@@ -3,7 +3,7 @@ import boto3
 from botocore.exceptions import ClientError
 import os
 from datetime import date
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -17,8 +17,7 @@ def upload_file(file_name, bucket, object_name=None):
     # Upload the file
     s3_client = boto3.client('s3',
                              aws_access_key_id=os.getenv("aws_access_key_id"),
-                             aws_secret_access_key=os.getenv(
-                                 "aws_secret_access_key"),
+                             aws_secret_access_key=os.getenv("aws_secret_access_key"),
                              aws_session_token=os.getenv('aws_session_token'))
     try:
         response = s3_client.upload_file(file_name, bucket, object_name)
