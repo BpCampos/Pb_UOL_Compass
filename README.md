@@ -1,3 +1,7 @@
+## Sobre este repositório
+
+Repositório responsável por armazenar todas os conhecimentos obitdos durante as sprints 1 a 10 do programa de bolsas de engenharia de dados, assim como todas as etapas do projeto final envolvendo `ETL com Spark`, `armazenamento dos dados com S3`, scripts em `Python para coleta de dados de API`, `modelagem dimensional dos dados` e `vizualização dos dados coletados` através do `Amazon Quicksight`
+
 ## Apresentação
 
 ### Olá, sou Bruno Pires de Campos Carvalho
@@ -8,7 +12,7 @@
 
 **Curso:** Análise e Desenvolvimento de Sistemas
 
-**Semestre:** 1o
+**Semestre:** 2o
 
 **Sobre mim:** Participei de um bootcamp de Desenvolvimento Full Stack, por meio do qual adquiri habilidades com tecnologias **Front End** sendo elas:
 
