@@ -1,9 +1,12 @@
 import requests
 import pandas as pd
+from dotenv import load_dotenv
+import os
 from IPython.display import display
 
+load_dotenv()
 
-api_key = "8b62cdc133cde67b0beb9ba05597345a"
+api_key = os.getenv('api_key')
 
 url = f"https://api.themoviedb.org/3/movie/top_rated?api_key={
     api_key}&language=pt-BR"
